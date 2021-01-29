@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>Регистрация</title>
+    <link rel = "stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+<div id="registration">
+    <form action="" method="POST">
+        <h1>Регистрация</h1>
+        <label> Логин </label><br>
+        <input type="text" name="login"  placeholder="Придумайте логин" id = "login" /><br><br>
+
+        <label> Имя </label><br>
+        <input type="text" name="name"  placeholder="Ваше имя" id = "name" /><br><br>
+
+        <label> Фамилия </label><br>
+        <input type="text" name="surname"  placeholder="Ваша фамилия" id = "surname" /><br><br>
+
+        <label> Отчество </label><br>
+        <input type="text" name="patronymic"  placeholder="Ваше отчество" id = "patronymic" /><br><br>
+
+        <label> Паспортные данные </label><br>
+        <input type="text" name="passport"  placeholder="Серия, номер" id = "passport" /><br><br>
+
+        <label> Пароль </label><br>
+        <input type="password" name="password"  placeholder="Придумайте пароль" id = "password" /><br><br>
+
+        <label> Повторите пароль </label><br>
+        <input type="password" name="password_2"  placeholder="Повторите пароль" id = "password_2" /><br><br>
+
+        <input type="submit" value="Зарегистрироваться" onclick="location.href='index.hbs.html'"/>
+
+        <p><a href="edit.hbs.html">Уже зарегистрированы? Войдите в систему</a></p>
+    </form>
+</div>
+</body>
+<html>
