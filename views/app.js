@@ -15,3 +15,12 @@ const pool = mysql.createPool({
 });
 
 app.set("view engine", "hbs");
+
+connection.connect(function(err){
+    if (err) {
+        return console.error("Ошибка: " + err.message);
+    }
+    else{
+        console.log("Подключение к серверу MySQL успешно установлено");
+    }
+});
